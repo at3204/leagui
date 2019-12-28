@@ -70,7 +70,7 @@ class AdminLeague extends Component {
     render(){
         return (
             <DashboardLayout>
-                <div>
+                <div className="adimin_table">
                 <Paper>
                         <Table>
                             <TableHead>

@@ -6,12 +6,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #3778a3;
+    color: #c0cbd3;
 }
 
 a:hover {
     text-decoration: none;
-    color: #4c9cd1;
+    color: #ffffff;
 }
 
 .header_text{
@@ -156,7 +156,7 @@ button {
 
 .error_wrapper{
     text-align: center;
-    margin-top: 96px;
+    margin-top: 150px;
     padding: 20px;
     background-size: 5px 5px !important;
     min-height: 60vh;
@@ -164,6 +164,23 @@ button {
     font-size: 20px;
     font-family: 'IBM Plex Serif', sans-serif;;
     color: #3a468b;
+}
+
+/* --------- about --------- */
+.about_container {
+    width:800px;
+    margin: 0 auto;
+}
+
+.about_wrapper{
+    text-align: center;
+    margin-top: 150px;
+    padding: 1px;
+    background-size: 5px 5px !important;
+    min-height: 60vh;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'IBM Plex Serif', sans-serif;
 }
 
 /* ------- header footer ------- */
@@ -321,6 +338,18 @@ footer .footer_discl {
     font-size: 40px;
 }
 
+.about_wrapper a,
+.adimin_table a {
+    text-decoration: none;
+    color: #3778a3;
+}
+
+.about_wrapper a:hover,
+.adimin_table a:hover {
+    text-decoration: none;
+    color: #4c9cd1;
+}
+
 .editmatch_dialog_wrapper,
 .editplayers_dialog_wrapper {
     padding: 20px;
@@ -402,9 +431,19 @@ footer .footer_discl {
 
 .sign_in_sign_up,
 .sign_up_sign_in{
+    margin: 20px 0px
+}
+
+.sign_in_sign_up a,
+.sign_up_sign_in a{
     text-decoration: underline;
     color: #3778a3;
-    margin: 20px 0px
+}
+
+.sign_in_sign_up a:hover,
+.sign_up_sign_in a:hover{
+    text-decoration: underline;
+    color: #4c9cd1;
 }
 
 .user_dashboard {

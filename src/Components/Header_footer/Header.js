@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { firebase } from '../../firebase';
-
+import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -35,6 +35,9 @@ class Header extends Component {
                             </div>
                         </Link>
                     </div>
+                    <Link to='/about'>
+                        <Button color='inherit'>About</Button>
+                    </Link>
                 </Toolbar>
 
             </AppBar>

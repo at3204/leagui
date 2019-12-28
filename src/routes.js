@@ -14,6 +14,7 @@ import AddEditMatch from './Components/admin/matches/addEditMatch';
 import AddEditPlayers from './Components/admin/players/addEditPlayers';
 import AddEditTeam from './Components/admin/players/addEditTeams';
 import ErrorPage from './Components/error';
+import About from './Components/about';
 
 const Routes = (props) => {
   return(
@@ -30,9 +31,11 @@ const Routes = (props) => {
         <PrivateRoutes {...props} path="/dashboard" exact component={AdminLeague} />
         <PrivateRoutes {...props} path="/dashboard/add" exact component={AddLeague} />
         <PublicRoutes {...props} restricted={false} path="/" exact component={Home} />
+        <PublicRoutes {...props} restricted={false} path="/about" exact component={About} />
         <PublicRoutes {...props} restricted={true} path="/sign_in" exact component={SignIn} />
         <PublicRoutes {...props} restricted={false} path="/sign_up" exact component={SignUp} />
         <PublicRoutes {...props} restricted={false} path="/error" exact component={ErrorPage} />
+        <PublicRoutes {...props} restricted={false} component={ErrorPage} />
       </Switch>
     </Layout>
   )

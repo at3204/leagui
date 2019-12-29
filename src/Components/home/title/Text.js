@@ -4,6 +4,7 @@ import Animate from 'react-move/Animate';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import video from '../../../Resources/video/video.mp4';
+import poster from '../../../Resources/video/poster.jpg';
 
 export default class Text extends Component {
 
@@ -88,10 +89,12 @@ export default class Text extends Component {
     render() {
         return (
             <div>
-                <video className="home_video" autoPlay loop muted>
+                <video className="home_video" autoPlay loop muted
+                    poster={poster}
+                >
                     <source src={video} type="video/mp4" />
                 </video>
-            
+
                 <div className="home_text">
                     {this.animateFirst()}
                     {this.animateSecond()}

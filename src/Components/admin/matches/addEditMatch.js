@@ -208,7 +208,6 @@ export default class AddEditMatch extends Component {
         });
 
         if(formIsValid){
-            //const uid = this.props.user.uid;
             const league = this.props.match.params.league;
             if(this.state.formType === 'Edit Match'){
                 firebaseDB.ref(`leagues/${league}/matches/${this.state.matchId}`)
@@ -254,7 +253,6 @@ export default class AddEditMatch extends Component {
 
     componentDidMount(){
         const matchId = this.props.match.params.id;
-        //const uid = this.props.user.uid;
         const league = this.props.match.params.league;
         const getTeams = (match, type) => {
             firebaseDB.ref(`leagues/${league}/teams`).once('value').then((snapshot)=>{
@@ -281,9 +279,8 @@ export default class AddEditMatch extends Component {
     }
 
     render() {
-        console.log(this.props);
         return (
-            <AdminLayout>
+            <AdminLayout {...this.props}>
                 <div className="editmatch_dialog_wrapper">
                     <h2>{this.state.formType}</h2>
                     <div>
@@ -311,6 +308,7 @@ export default class AddEditMatch extends Component {
                                         />
                                     </div>
                                 </div>
+                                <div className="label_inputs">Away</div>
                                 <div className="wrapper">
                                     <div className="left">
                                         <FormFeild

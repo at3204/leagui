@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import FormFeild from '../../ui/formFeilds';
 import { validate } from '../../ui/misc';
 import { firebaseDB } from '../../../firebase';
+import DashboardLayout from '../../../Hoc/DashboardLayout';
 
 export default class AddLeague extends Component {
 
@@ -104,6 +105,7 @@ export default class AddLeague extends Component {
 
     render() {
         return (
+            <DashboardLayout {...this.props}>
                 <div className="addleague_dialog_wrapper">
                     <h2>{this.state.formType}</h2>
                     <div>
@@ -122,13 +124,13 @@ export default class AddLeague extends Component {
                                     {this.state.formType}
                                 </button>
                                 <Link to="/dashboard">
-                                    <button>Back to Dashboard</button>
+                                    <button>Back</button>
                                 </Link>
                             </div>
                         </form>
                     </div>
                 </div>
-            
+            </DashboardLayout>
         )
     }
 }

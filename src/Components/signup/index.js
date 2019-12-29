@@ -155,12 +155,12 @@ export default class SignUp extends Component {
                         }
 
                         <button className="sign_in_button" onClick={(event) => this.googleSignin(event)}>
-                                <img class="sign_in_button_img" alt="Google"
+                                <img className="sign_in_button_img" alt="Google"
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
-                                <p class="sign_in_button_text">Sign Up with Google</p>
+                                <p className="sign_in_button_text">Sign Up with Google</p>
                         </button>
                     </form>
-                    <div class="sign_up_sign_in">
+                    <div className="sign_up_sign_in">
                         <Link to="/sign_in">
                             Already have an account? Login
                         </Link>

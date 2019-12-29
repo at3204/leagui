@@ -311,7 +311,7 @@ footer .footer_discl {
 }
 
 .admin_container .admin_left_nav {
-    min-height: 100vh;
+    min-height: 90vh;
     background: #282828;
     border-right: 2px solid #01285e;
 }
@@ -377,7 +377,7 @@ footer .footer_discl {
     width: 60px;
     text-align: center;
     background: #dbdbdb;
-    color: #ffffff;
+    color: #000000;
 }
 
 .admin_submit button {

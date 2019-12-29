@@ -283,10 +283,8 @@ export default class AddEditPlayer extends Component {
     }
 
     render() {
-        //console.log(this.state.defaultImg);
-        console.log(this.state.formData.team);
         return (
-            <AdminLayout>
+            <AdminLayout {...this.props}>
                 <div className="editplayers_dialog_wrapper">
                     <h2>
                         {this.state.formType}

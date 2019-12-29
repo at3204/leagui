@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { firebaseDB } from '../../firebase';
 import { Route, Redirect } from 'react-router-dom';
 import CircularProgress from '@material-ui/core/CircularProgress';
-//mport ErrorPage from '../error';
 
 export default class PrivateRoutes extends Component {
     state = {
@@ -40,7 +39,6 @@ export default class PrivateRoutes extends Component {
             ...rest
         } = this.props;
 
-        console.log(this.state);
         return (
             <div>
                 {

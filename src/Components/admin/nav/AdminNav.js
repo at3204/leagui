@@ -4,7 +4,7 @@ import ListItem from '@material-ui/core/ListItem';
 import { firebase } from '../../../firebase';
 
 const AdminNav = (props) => {
-    const league = props.children._self.props.match.params.league;
+    const league = props.match.params.league;
     const links = [{
             title: 'Back to Dashboard',
             linkTo: '/dashboard'
@@ -52,7 +52,7 @@ const AdminNav = (props) => {
     const logout = () => {
         firebase.auth().signOut().then(function() {
             // Sign-out successful.
-            this.props.history.push('/sign_up');
+            props.history.push('/sign_up');
           }).catch((e) => {
             // An error happened.
             console.log("sign out error!");

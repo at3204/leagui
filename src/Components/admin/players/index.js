@@ -36,7 +36,7 @@ export default class AdminPlayers extends Component {
 
     render() {
         return (
-            <AdminLayout>
+            <AdminLayout {...this.props}>
                 <div className="adimin_table">
                     <Paper>
                         <Table>

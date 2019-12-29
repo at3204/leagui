@@ -69,7 +69,7 @@ class AdminLeague extends Component {
 
     render(){
         return (
-            <DashboardLayout>
+            <DashboardLayout {...this.props}>
                 <div className="adimin_table">
                 <Paper>
                         <Table>
@@ -119,50 +119,6 @@ class AdminLeague extends Component {
                         {this.state.isLoading && 
                         <CircularProgress thickness={7} style={{color:'#98c5e9'}}/>}
                     </div>
-                    {/*   
-                        !this.state.isLoading && 
-                        <div className="league_container">
-                            <div className="league_card_wrapper">
-                            {!!this.state.leagues && this.state.leagues.map((league,i) => {
-                                return(
-                                    <div key={i} className="card">
-                                        <Card>
-                                            <CardHeader className="card_header"
-                                                title={league.id}
-                                            />
-                                            <CardActions>
-                                            <Button size="large" color="primary" href={`${league.id}/admin_players`}>
-                                                edit
-                                            </Button>
-                                            <Button size="large" color="primary" 
-                                                onClick={(event) => this.deleteLeague(event, league.id)}>
-                                                delete
-                                            </Button>
-                                            </CardActions>
-                                        </Card>
-                                        {this.state.formError && 
-                                            <div className="error_label">Something is wrong</div>}
-                                    </div>
-                                );
-                            })}
-                            </div>
-                            <div className="league_botton_wrapper">
-                                <div className="league_botton">
-                                    <Link to='/dashboard/add'>
-                                        <Button size="small" color="primary" variant="contained">
-                                            add new league
-                                        </Button>
-                                    </Link>
-                                </div>
-                                <div className="league_botton">  
-                                    <Button size="small" color="primary" onClick={this.logout} variant="contained">
-                                        log out
-                                    </Button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        */}
                 </div>
             </DashboardLayout>
         )

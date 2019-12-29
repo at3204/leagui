@@ -22,7 +22,7 @@ const DashBoardNav = (props) => {
     const logout = () => {
         firebase.auth().signOut().then(function() {
             // Sign-out successful.
-            props.children._self.props.history.push('/sign_in');
+            props.history.push('/sign_in');
           }).catch((e) => {
             // An error happened.
             console.log("sign out error!");

@@ -79,7 +79,7 @@ export default class Text extends Component {
                         transform: `translate(${left}px, 600px)`
                     }}
                 >
-                    Create your own Leagues and store the Players and Matches info
+                    Create your own Leagues, store the Players and Matches info
                 </div>
             )}
         </Animate>

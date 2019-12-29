@@ -187,7 +187,7 @@ export default class SignIn extends Component {
                         <button className="sign_in_button" onClick={(event) => this.googleSignin(event)}>
                                 <img alt="Google" class="sign_in_button_img" 
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
-                                <p class="sign_in_button_text">Sign In with Google</p>
+                                <p class="sign_in_button_text">Login with Google</p>
                         </button>
                     </form>
                     

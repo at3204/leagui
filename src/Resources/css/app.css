@@ -17,8 +17,11 @@ a:hover {
 .header_text{
     font-family: 'Poller One', cursive;
     position: relative;
-    color: #ffffff;
     font-size: 25px;
+}
+
+.header_text a{
+    color: #ffffff;
 }
 
 .link_logo {

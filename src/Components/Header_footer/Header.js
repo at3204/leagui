@@ -29,11 +29,11 @@ class Header extends Component {
             >
                 <Toolbar style={{display: 'flex'}}>
                     <div style={{flexGrow: 1}}>
-                        <Link to="/">
                             <div className='header_text'>
-                                LEAGUI
+                                <Link to="/">
+                                    LEAGUI
+                                </Link>
                             </div>
-                        </Link>
                     </div>
                     <Link to='/about'>
                         <Button color='inherit'>About</Button>

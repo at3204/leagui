@@ -13,11 +13,11 @@ export default class Text extends Component {
             show={true}
             start={{
                 opacity:0,
-                left:300,
+                left:16,
             }}
             enter={{
                 opacity:[1],
-                left:[274],
+                left:[18],
                 timing:{duration:1000, ease:easePolyOut}
             }}
         >
@@ -25,7 +25,7 @@ export default class Text extends Component {
                 <div className="home_first"
                     style={{
                         opacity,
-                        transform: `translate(${left}px, 450px)`
+                        transform: `translate(${left}vw, 60vh)`
                     }}
                 >
                     LEAGUI
@@ -39,11 +39,11 @@ export default class Text extends Component {
             show={true}
             start={{
                 opacity:0,
-                left:260
+                left:16
             }}
             enter={{
                 opacity:[1],
-                left:[273],
+                left:[19],
                 timing:{delay:500, duration:1000, ease:easePolyOut}
             }}
         >
@@ -51,7 +51,7 @@ export default class Text extends Component {
                 <div className="home_second"
                     style={{
                         opacity,
-                        transform: `translate(${left}px, 600px)`
+                        transform: `translate(${left}vw, 80vh)`
                     }}
                 >
                     Sports management web app for Leagues and Teams
@@ -65,11 +65,11 @@ export default class Text extends Component {
             show={true}
             start={{
                 opacity:0,
-                left:260
+                left:16
             }}
             enter={{
                 opacity:[1],
-                left:[273],
+                left:[19],
                 timing:{delay:500, duration:1000, ease:easePolyOut}
             }}
         >
@@ -77,7 +77,7 @@ export default class Text extends Component {
                 <div className="home_second"
                     style={{
                         opacity,
-                        transform: `translate(${left}px, 600px)`
+                        transform: `translate(${left}vw, 82vh)`
                     }}
                 >
                     Create your own Leagues, store the Players and Matches info

@@ -57,7 +57,7 @@ export default class SignUp extends Component {
             }
         }
     }
-
+    
     submitForm(event){
         event.preventDefault();
         let dataToSubmit = {};

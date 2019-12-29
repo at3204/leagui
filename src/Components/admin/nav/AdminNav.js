@@ -6,6 +6,9 @@ import { firebase } from '../../../firebase';
 const AdminNav = (props) => {
     const league = props.children._self.props.match.params.league;
     const links = [{
+            title: 'Back to Dashboard',
+            linkTo: '/dashboard'
+        },{
             title: 'Add Teams',
             linkTo: `/${league}/admin_players/edit_team`
         },{
@@ -20,9 +23,6 @@ const AdminNav = (props) => {
         },{
             title: 'Add Players',
             linkTo: `/${league}/admin_players/add_player`
-        },{
-            title: 'Leagues Dahboard',
-            linkTo: '/dashboard'
     }]
 
     const style = {
@@ -66,7 +66,7 @@ const AdminNav = (props) => {
             </ListItem>
             {renderItems()}
             <ListItem button style={style} onClick={logout}>
-                log out
+                Logout
             </ListItem>
         </div>
     );

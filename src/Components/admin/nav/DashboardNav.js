@@ -26,7 +26,8 @@ const DashBoardNav = (props) => {
           }).catch((e) => {
             // An error happened.
             console.log("sign out error!");
-          });
+          }
+        );
     }
 
     return (
@@ -36,11 +37,11 @@ const DashBoardNav = (props) => {
             </ListItem>
             <Link to='/dashboard/add'>
                 <ListItem button style={style}>
-                    add new league
+                    Add new league
                 </ListItem>
             </Link>
             <ListItem button style={style} onClick={logout}>
-                log out
+                Logout
             </ListItem>
         </div>
     );

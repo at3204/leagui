@@ -24,6 +24,10 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock
 
+# firebase
+.firebase*
+firebase.json
+
 # other
 /src/Resources/video
 

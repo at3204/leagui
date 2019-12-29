@@ -8,5 +8,5 @@ Leagui is still in Beta version. In the process of being tested before its offic
 
 If you have any concerns or recommedations, please contact us.
 
-## Contact Us
+## Contact
 email: leagui124@gmail.com
